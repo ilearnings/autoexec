@@ -1,0 +1,19 @@
+draw_config:
+  append_colon_to_layer_header: false
+  key_font: "Microsoft YaHei, Noto Sans CJK SC, sans-serif"
+  key_font_size: 8
+  key_h: 84
+  key_w: 90
+  line_spacing: 1.3
+  shrink_wide_legends: 5
+  svg_extra_style: |
+    .key .legend {
+      font-weight: bold;
+    }
+    rect.key.bound {
+      fill: #87CEEB;
+    }
+    .layer-header {
+      font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif !important;
+      font-weight: bold;
+    }

@@ -1,0 +1,20 @@
+# 忽略所有文件
+/*
+
+# 放行文件夹
+!.github/
+!.github/**
+!docs/
+!docs/**
+!images/
+!images/**
+!keymap/
+!keymap/**
+
+# 忽略特定生成物与虚拟环境
+keymap/.venv/
+
+# 放行文件
+!.gitignore
+!autoexec.cfg
+!README.md

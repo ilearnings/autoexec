@@ -1,0 +1,104 @@
+# autoexec.cfg
+
+[![Bilibili](https://img.shields.io/badge/Bilibili-ResoundXXXL-pink?style=flat&logo=bilibili)](https://www.bilibili.com/opus/919897577226240086)
+[![Docsb](https://img.shields.io/badge/Docs-%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97-blue?style=flat&logo=markdown)](./docs/DEVELOPMENT.md)
+[![Generated](https://img.shields.io/badge/Generated-%E9%94%AE%E9%BC%A0%E5%9B%BE-green?style=flat&logo=svg)](./images/bindings.svg)
+[![Steam](https://img.shields.io/badge/Steam-CS2-white?style=flat&logo=steam)](https://store.steampowered.com/news/app/730)
+[![Valve](https://img.shields.io/badge/Valve-%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-red?style=flat&logo=valve)](https://developer.valvesoftware.com/wiki/Main_Page)
+
+**_这是我的 Counter-Strike 系列游戏配置仓库._**
+
+## 食用指南
+
+打开终端并复制命令:
+
+```zsh
+git clone https://github.com/ilearnings/autoexec.git
+```
+
+将 `autoexec\` 文件夹中的文件复制到 `\<你的Steam文件夹>\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg\` 目录下即可
+
+## 启动项(Steam)
+
+```cfg
+-perfectworld -high -nojoy -novid -refresh 170 -threads 16 -tickrate 128 +rate 786432
+```
+
+### 启动项(PWA)
+
+```cfg
+-perfectworld -high -nojoy -novid -refresh 170 -threads 16 -tickrate 128 +rate 786432 +exec autoexec.cfg
+```
+
+| 参数 | 说明 |
+| :--- | :--- |
+| `-perfectworld` | *开启国服 (二选一) |
+| `-worldwide` | *开启国际服 (二选一) |
+| `-high` | 高优先级 |
+| `-nojoy` | 关闭遥杆 |
+| `-novid` | 关闭开场动画 |
+| `-refresh 170` | 强制刷新率 `<屏幕刷新率>` |
+| `-threads 16` | 多线程优化 `<CPU线程数>` |
+| `-tickrate 128` | 游戏采样速率 `<官匹64,非官匹128>` |
+| `+exec FILE.cfg` | 执行 `<FILE.cfg>` 文件 |
+
+## 按键绑定
+
+[![bindings](./images/bindings.svg)](https://raw.githubusercontent.com/ilearnings/autoexec/main/images/bindings.svg)
+
+## 鼠标
+
+![mouse](./images/mouse.png)
+
+| 配置项 | 值 |
+| :--- | :--- |
+| Windows | 7 |
+| DPI | 1000 |
+| Hz | 1000 |
+
+## 显卡
+
+| 配置项 | 值 |
+| :--- | :--- |
+| 设置G-Sync | 以窗口和全屏模式启动 |
+
+## 显示
+
+| 配置项 | 值 |
+| :--- | :--- |
+| 增强角色对比度 | 启用 |
+| V-Sync | 已启用 |
+| NVIDIA G-Sync | 已启用 + 加速 |
+| NVIDIA Reflex 低延迟 | 已启用 |
+| 当前视频值预设 | 自定义 |
+| 多重采样抗锯齿模式 | 2X MSAA |
+| 全局阴影效果 | 低 |
+| 动态阴影 | 全部 |
+| 模型/贴图细节 | 低 |
+| 贴图过滤模式 | 双线性 |
+| 影细节 | 低 |
+| 粒子细节 | 低 |
+| 环境遮蔽光 | 高 |
+| 高动态范围 | 品质 |
+| Fidelity FX超级分辨率 | 已禁用(最高品质) |
+
+## 已取消配置
+
+```cfg
+// 大跳
+alias "+bjump" "+jump; +duck"
+alias "-bjump" "-jump; -duck"
+bind "SPACE" "+bjump"
+
+// 向前一步跳投
+alias "+forwardjumpaction" "+forward; +jump"
+alias "-forwardjumpaction" "-jump; -forward"
+alias "+throwaction" "-attack; -attack2"
+bind "f" "+forwardjumpaction; +throwaction"
+
+// 原地跳投
+alias "+jumpaction" "+jump"
+alias "+throwaction" "-attack; -attack2"
+alias "-jumpaction" "-jump"
+bind "MOUSE4" "+jumpaction; +throwaction"
+```
