@@ -135,8 +135,8 @@ rect.key.bound {
   font-weight: bold;
 }
 </style>
-<g transform="translate(30, 0)" class="layer-github.com/ilearnings/cs-autoexec">
-<text x="0" y="28" class="label" id="github.comilearningscs-autoexec">github.com/ilearnings/cs-autoexec</text>
+<g transform="translate(30, 0)" class="layer-github.com/ilearnings/autoexec">
+<text x="0" y="28" class="label" id="github.comilearningsautoexec">github.com/ilearnings/autoexec</text>
 <g transform="translate(0, 56)">
 <g transform="translate(42, 42)" class="key keypos-0">
 <rect rx="6" ry="6" x="-40" y="-40" width="80" height="80" class="key"/>
@@ -671,5 +671,5 @@ rect.key.bound {
   <text class="mouse-label" x="80" y="195" text-anchor="end">装</text>
   <text class="mouse-label" x="80" y="209" text-anchor="end">备</text>
 </g>
-<g id="svg-meta"><text x="2272" y="40" style="text-anchor:end" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="3" paint-order="stroke" stroke-linejoin="round" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">2026-10-23 15:30:13 UTC+08:00</text></g>
+<g id="svg-meta"><text x="2272" y="40" style="text-anchor:end" font-size="12" font-weight="bold" fill="#000000" stroke="#ffffff" stroke-width="3" paint-order="stroke" stroke-linejoin="round" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">2026-11-01 17:00:02 UTC+08:00</text></g>
 </svg>
